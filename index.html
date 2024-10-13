@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Cómputo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda de Productos de Cómputo</h1>
+
+
+        <form id="formulario-precio">
+            <label for="precio-min">Precio mínimo:</label>
+            <input type="number" id="precio-min" placeholder="Ej: 500" required>
+            
+            <label for="precio-max">Precio máximo:</label>
+            <input type="number" id="precio-max" placeholder="Ej: 7000" required>
+            
+            <button type="submit">Filtrar por Precio</button>
+        </form>
+
+
+        <form id="formulario-nombre">
+            <label for="nombre">Buscar por nombre:</label>
+            <input type="text" id="nombre" placeholder="Ej: Laptop" required>
+            <button type="submit">Buscar Producto</button>
+        </form>
+
+
+        <h2>Resultados</h2>
+        <ul id="lista-productos"></ul>
+        
+        
+        <button id="btn-limpiar">Limpiar Filtros</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
